@@ -19,25 +19,21 @@ import java.util.Date;
 
 @SpringBootApplication
 public class EnsapayApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(EnsapayApplication.class, args);
     }
-
     @Bean
     CommandLineRunner run(FactureService factureService, AgentService agentService, AdminService adminService) {
         return args -> {
 
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
-
             Date date = new Date();
-
+                // création admin
             adminService.saveAdmin(new Admin("admin", "admin", "admin@gmail.com"));
-
+                // création agent
             adminService.createAgent("agent", "agent", "CIN", "A123", new Date(), "marrakech", "agent@mail.com", "0612454558", "az1212", "az1212");
-
+                // création client
             agentService.createUser("client","brahim","ahmed","client@mail.com","0622325435");
-
+                // création des factures
             factureService.createFacture("unpaied",20.0,"paiment facture electricite",date,"LYDEC","0622325435");
             factureService.createFacture("unpaied",30.0,"paiment facture eau",date,"LYDEC","06223254355");
             factureService.createFacture("unpaied",120.0,"paiment facture eau",date,"LYDEC","0622325435");
