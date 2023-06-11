@@ -77,11 +77,11 @@ public class AgentService {
         user.setPassword(passwordEncoder.encode(pass));
         userRepo.save(user);
 
-        String content="<h1> Hello Client "+ nom +" "+prenom+" and Welcome To EnsaPay  application.</h1> </br>" +
-                " <h3> please use these informations to log In to your Account: </h3>" +
+        String content="<h1> Bonjour le  Client "+ nom +" "+prenom+" et bienvenue à  JabakLah  application.</h1> </br>" +
+                " <h3> merci d'utiliser ces informations pour vous connecter à votre Compte : </h3>" +
                 "<ul>" +
-                "<li style='color:blue;'> User Name :  "+email+" </li> " +
-                "<li style='color:blue;'> Password : "+pass+" </li> " +
+                "<li style='color:blue;'> nom de utlisateur :  "+email+" </li> " +
+                "<li style='color:blue;'> mot de passe : "+pass+" </li> " +
                 "</ul>";
         emailService.sendEmail(email,content);
         return  true;
