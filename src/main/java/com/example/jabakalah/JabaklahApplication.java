@@ -42,7 +42,7 @@ public class JabaklahApplication {
             factureService.createFacture("unpaied",45.0,"paiment facture abonement telephone fix",date,"IAMRECHARGE","0622325435");
             factureService.createFacture("unpaied",25.0,"paiment facture abonement telephone fix",date,"IAMRECHARGE","0622325435");
             factureService.createFacture("unpaied",27.0,"paiment facture d'eau penalite ",date,"LYDEC","0613085665");
-            factureService.createFacture("unpaied",200.0,"paiment facture d'eau penalite",date,"REDAL","0613085665");S
+            factureService.createFacture("unpaied",200.0,"paiment facture d'eau penalite",date,"REDAL","0613085665");
 
         };
 
