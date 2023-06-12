@@ -1,9 +1,9 @@
-package com.example.ensapay;
+package com.example.jabakalah;
 
-import com.example.ensapay.models.Admin;
-import com.example.ensapay.service.AdminService;
-import com.example.ensapay.service.AgentService;
-import com.example.ensapay.service.FactureService;
+import com.example.jabakalah.models.Admin;
+import com.example.jabakalah.service.AdminService;
+import com.example.jabakalah.service.AgentService;
+import com.example.jabakalah.service.FactureService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
